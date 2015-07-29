@@ -18,12 +18,11 @@
   "license": "MIT",
   "main": "./core/index",
   "scripts": {
-    "start": "node index",
+    "start": "node index.js",
     "test": "grunt validate --verbose"
   },
   "engines": {
-    "node": "~0.10.0 || ~0.12.0",
-    "iojs": "~1.2.0"
+    "node": "0.12.x",
   },
   "dependencies": {
     "bcryptjs": "2.1.0",

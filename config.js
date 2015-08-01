@@ -22,10 +22,10 @@ config = {
         database: {
             client: 'mysql',
             connection: {
-                host     : 'ghost-qpcj9.q1.tenxcloud.net:40911', //输入数据库地址
-                user     : 'ghost', //输入数据库用户
-                password : 'ghostpass', //输入你的 MySQL 密码
-                database : 'port-amj8-40911', //输入数据库名称
+                host     : '10.10.26.58', //输入数据库地址
+                user     : 'u2FRhlSVk0X5G9jL', //输入数据库用户
+                password : 'p135PrOVRZJnq6LzU', //输入你的 MySQL 密码
+                database : 'wZSLljXJNP70y5IY', //输入数据库名称
                 charset  : 'utf8'
             },
             dubug: false,
@@ -34,7 +34,7 @@ config = {
             // Host to be passed to node's `net.Server#listen()`
             host: '0.0.0.0',
             // Port to be passed to node's `net.Server#listen()`, for iisnode set this to `process.env.PORT`
-            port: 2368,
+            port: process.env.PORT || 3000,
         }
     },
     // ### Development **(default)**

@@ -3,8 +3,6 @@
 // Documentation can be found at http://support.ghost.org/config/
 var path = require('path'),
     config;
-var coding_services = JSON.parse(process.env.VCAP_SERVICES);
-var coding_application = JSON.parse(process.env.VCAP_APPLICATION);
 config = {
     // ### Production
     // When running Ghost in the wild, use the production environment
@@ -24,10 +22,10 @@ config = {
         database: {
             client: 'mysql',
             connection: {
-                host     : '127.0.0.1', //输入数据库地址
-                user     : 'admin', //输入数据库用户
-                password : '8137a49a', //输入你的 MySQL 密码
-                database : 'mysql_ghost', //输入数据库名称
+                host     : 'ghost-qpcj9.q1.tenxcloud.net:40911', //输入数据库地址
+                user     : 'ghost', //输入数据库用户
+                password : 'ghostpass', //输入你的 MySQL 密码
+                database : 'port-amj8-40911', //输入数据库名称
                 charset  : 'utf8'
             },
             dubug: false,
@@ -36,7 +34,7 @@ config = {
             // Host to be passed to node's `net.Server#listen()`
             host: '0.0.0.0',
             // Port to be passed to node's `net.Server#listen()`, for iisnode set this to `process.env.PORT`
-            port: process.env.VCAP_APP_PORT || 3000,
+            port: 2368,
         }
     },
     // ### Development **(default)**

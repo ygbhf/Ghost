@@ -10,6 +10,6 @@ RUN cd /opt/nodejs && npm install --production
 
 ENV NODE_ENV production
 # Expose the container port
-EXPOSE 2368
+EXPOSE 3000
 
 ENTRYPOINT ["node", "index.js"]

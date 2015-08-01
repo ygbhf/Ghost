@@ -8,6 +8,7 @@ WORKDIR /opt/nodejs
 
 RUN cd /opt/nodejs && npm install --production
 
+ENV NODE_ENV production
 # Expose the container port
 EXPOSE 2368
 
